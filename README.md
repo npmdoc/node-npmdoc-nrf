@@ -1,4 +1,7 @@
-# api documentation for  [nrf (v0.8.3)](https://github.com/natevw/node-nrf)  [![npm package](https://img.shields.io/npm/v/npmdoc-nrf.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-nrf) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-nrf.svg)](https://travis-ci.org/npmdoc/node-npmdoc-nrf)
+# npmdoc-nrf
+
+#### api documentation for  [nrf (v0.8.3)](https://github.com/natevw/node-nrf)  [![npm package](https://img.shields.io/npm/v/npmdoc-nrf.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-nrf) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-nrf.svg)](https://travis-ci.org/npmdoc/node-npmdoc-nrf)
+
 #### nRF24L01 driver library
 
 [![NPM](https://nodei.co/npm/nrf.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/nrf)
