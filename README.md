@@ -1,6 +1,6 @@
 # npmdoc-nrf
 
-#### api documentation for  [nrf (v0.8.3)](https://github.com/natevw/node-nrf)  [![npm package](https://img.shields.io/npm/v/npmdoc-nrf.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-nrf) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-nrf.svg)](https://travis-ci.org/npmdoc/node-npmdoc-nrf)
+#### basic api documentation for  [nrf (v0.8.3)](https://github.com/natevw/node-nrf)  [![npm package](https://img.shields.io/npm/v/npmdoc-nrf.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-nrf) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-nrf.svg)](https://travis-ci.org/npmdoc/node-npmdoc-nrf)
 
 #### nRF24L01 driver library
 
@@ -65,7 +65,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "version": "0.8.3"
+    "version": "0.8.3",
+    "bin": {}
 }
 ```
 
