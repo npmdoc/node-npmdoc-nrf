@@ -187,21 +187,21 @@
         }
         forEachWithCB.call(Object.keys(registersNeeded), processInquiryForRegister, funct ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
+function _nop() {}          // used when a cb is not provided
 
 
-## Usage
+exports.connect = function (spi,ce,irq) {
+var _spi = spi, _ce = ce, _irq = irq;       // only for printDetails!
+var nrf = new events.EventEmitter(),
+    spi = SPI.initialize(spi),
+    ce = GPIO.<span class="apidocCodeKeywordSpan">connect</span>(ce),
+    irq = (arguments.length &#x3e; 2) &#x26;&#x26; GPIO.connect(irq);
 
-[Streams](https://github.com/substack/stream-handbook#readme)!
+nrf._T = _extend({}, _m.TIMING, {pd2stby:4500});        // may need local override of pd2stby
 
-```
-var radio = require(&#x27;nrf&#x27;).<span class="apidocCodeKeywordSpan">connect</span>(spiDev, cePin, irqPin);
-radio.channel(0x4c).dataRate(&#x27;1Mbps&#x27;).crcBytes(2).autoRetransmit({count:15, delay:4000});
-radio.begin(function () {
-    var rx = radio.openPipe(&#x27;rx&#x27;, 0xF0F0F0F0E1),
-        tx = radio.openPipe(&#x27;tx&#x27;, 0xF0F0F0F0D2);
-    rx.pipe(tx);        // echo back everything
-});
-```
+nrf.blockMicroseconds = function (us) {
+    // NOTE: setImmediate/process.nextTick too slow (especially on Pi) so we just spinloop for µs
+    var start = process.hrtime();
 ...</pre></li>
     </ul>
 
